@@ -1,3 +1,4 @@
+'''
 miVar = 3
 print(miVar)
 miVar = 'Hola a todos'
@@ -82,19 +83,26 @@ else:
 # resultado = input('Digite un nro: ')  # regresa un dato tipo string
 # print(resultado)
 '''
+
+'''
 # conversion de la entrada de datos funcion input
 numero1 = int(input('Escribe el primer nro: '))
 numero2 = int(input('Escribe el segundo nro: '))
 resultado = numero1 + numero2
 print('El resultado de la suma es', resultado)
 '''
+
 '''
 Ejercicio 1: Califica tu día 
 ¿Cómo estuvo tu día (1 al 10)?
 Mi día estuvo de: 10
 '''
+
+'''
 miDia = int(input('¿Cómo estuvo tu día (1 al 10)? '))
 print('Mi día estuvo de:', miDia)
+
+'''
 
 '''
 Ejercicio 2: 
@@ -106,7 +114,147 @@ Proporciona el título:
 Proporciona el autor:
 <título> fue escrito por <autor>
 '''
+
+'''
 print('Mis libros')
 titulo = input('Proporciona el título: ')
 autor = input('Proporciona el autor: ')
 print(titulo, 'fue escrito por', autor)
+
+'''
+
+'''
+# operadores aritmeticos: suma
+operandoA = 8
+operandoB = 5
+suma = operandoA + operandoB
+print('Resultado: ', suma)
+print(f'el resultado es: {suma}')  # interpolacion: la f es obligatoria
+
+# operadores arit: resta
+resta = operandoA - operandoB
+print(f'resta: {resta}')
+
+# multiplicacion
+multiplicacion = operandoA * operandoB
+print(f'multiplicacion: {multiplicacion}')
+
+# division
+division = operandoA / operandoB
+print(f'division: {division}')
+
+# division con resultado en enteros
+divisionInt = operandoA // operandoB
+print(f'division (int): {divisionInt}')
+
+#modulo
+modulo = operandoA % operandoB
+print(f'modulo: {modulo}')
+
+# exponente
+exponente = operandoA ** operandoB
+print(f'exponente: {exponente}')
+
+'''
+
+'''
+ejercicio: calcular el area y el eprimetro de un rectangulo.
+Para ello, crear variables alto(int) y ancho(int). El usuario debe
+proporcionar los valores de alto y ancho, despues se debe imprimir el 
+resultado.
+'''
+'''
+alto = int(input('Proporciona el alto del rectangulo: '))
+ancho = int(input('Proporciona el ancho del rectangulo: '))
+area = alto * ancho
+perimetro = (alto + ancho) * 2
+print(f'Area: {area}')
+print(f'Perimetro: {perimetro}')
+'''
+
+'''
+# operadores aritmeticos: asignacion
+miVariable3 = 10
+print(miVariable3)
+
+# operadores: reasignacion
+miVariable3 = miVariable3 + 1
+print(miVariable3)
+
+# incremento con reasignacion reducida
+miVariable3 += 1
+print(miVariable3)
+
+# reasignacion resta
+miVariable3 -= 2
+print(miVariable3)
+
+# reasignacion multiplicacion
+miVariable3 *= 3
+print(miVariable3)
+
+# reasignacion division
+miVariable3 /= 2
+print(miVariable3)
+
+# operadores de comparacion
+# igualdad
+d = 4
+b = 2
+resultado = d == b  # como resultado dara un boolean
+print(resultado)
+
+# operador: diferentes
+resultado = d != b
+print(resultado)
+
+# operador: mayor/menor que
+resultado = d > b
+print(resultado)
+
+resultado = d < b
+print(resultado)
+
+# mayor/menor o igual que
+resultado = d >= b
+print(resultado)
+
+resultado = d <= b
+print(resultado)
+'''
+
+'''
+Ejercicio: nro par o impar
+1) solicitamos al usuario que ingrese un nro
+2) este se asigna a una variable
+3) se debe usar la estructura if/else
+4) si es true imprimos que es par
+5) si es false imprimimos que es impar
+'''
+'''
+num = int(input('Ingrese un nro: '))
+print(f'El residuo de la division es: {num % 2}')
+
+if (num % 2 == 0):
+    print(f'El nro {num} es par')
+else:
+    print(f'El nro {num} es impar')
+'''
+
+'''
+Ejercicio: determinar si es mayor de edad.
+1) pedir un nro al usuario
+2) almacenar el valor en un variable
+3) usar la estructura if/else
+4) la formula es: <num> >= 18
+5) True: eres mayor de edad
+6) false: eres menor de edad
+'''
+
+edadAdulto = 18
+edad = int(input('Ingrese su edad: '))
+
+if (edad >= edadAdulto):
+    print(f'Tu edad es {edad} años, eres mayor de edad')
+else:
+    print(f'Tu edad es {edad} años, eres menor de edad')
